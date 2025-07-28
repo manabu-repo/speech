@@ -5,7 +5,16 @@ Opinionated Frontend Monorepo Starter Template
 ## plans
 
 - [ ] `Why PNPM` (use Slidev)
-- [ ] `Slidev Template For Work`
+- [ ] `[WIP] Slidev Template For Work`
+
+## use template
+
+- default
+- seriph
+- penguin
+- zhozhoba(not work)
+- takahashi
+- unicorn
 
 ## License
 
