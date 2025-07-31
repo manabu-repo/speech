@@ -8,7 +8,7 @@ drawings:
   persist: false
 transition: slide-left
 mdc: true
-mode: dark
+mode: light
 
 excerpt: "Template for work, use ppt as a markdown"
 date: "2025-07-28"
@@ -28,16 +28,15 @@ Probation confirmation defense template.
   Press Space for next page <carbon:arrow-right />
 </div>
 
+<SeeyonIcon />
+
 ---
 transition: slide-up
 layout: image-right
 image: https://cover.sli.dev
 ---
 
-<!-- <div class="absolute top-2 left-2 flex items-center">
-  <img src="../public/assets/blog/preview/seeyon.png" class="h-12 mr-3"/>
-  <div class="text-xl font-bold op-80">Seeyon</div>
-</div> -->
+<SeeyonIcon />
 
 # 述职报告概览
 
@@ -88,6 +87,8 @@ image: https://cover.sli.dev
 ---
 transition: fade-out
 ---
+
+<SeeyonIcon />
 
 # 自我介绍
 
@@ -140,6 +141,9 @@ transition: fade-out
 layout: two-cols
 ---
 
+<SeeyonIcon />
+<FlowLightEffect />
+
 # 试用期工作内容
 
 <div class="text-left">
@@ -177,6 +181,8 @@ layout: two-cols
 ---
 class: "pt-16"
 ---
+
+<SeeyonIcon />
 
 # 技术亮点与突出价值
 
@@ -228,9 +234,13 @@ class: "pt-16"
 
 ---
 
+<SeeyonIcon />
+
 # 试用期工作亮点/突出价值产出 **
 
 ---
+
+<SeeyonIcon />
 
 # 试用期对公司企业文化的学习和收获
 
@@ -262,6 +272,8 @@ class: "pt-16"
 ---
 layout: two-cols
 ---
+
+<SeeyonIcon />
 
 # 试用期的成长和入职体验
 
@@ -311,6 +323,8 @@ layout: two-cols
 ## 建议
 
 ---
+
+<SeeyonIcon />
 
 # 不足及改进计划
 
@@ -385,6 +399,8 @@ layout: two-cols
 class: text-center
 ---
 
+<SeeyonIcon />
+
 <div class="h-full flex flex-col items-center justify-center">
   <div class="text-5xl font-bold mb-10">
     <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400">
@@ -399,6 +415,8 @@ class: text-center
 ---
 class: text-center
 ---
+
+<SeeyonIcon />
 
 # 展望未来
 ## 2025下半年个人发展目标
@@ -431,6 +449,8 @@ class: text-center
 ---
 class: text-center
 ---
+
+<SeeyonIcon />
 
 <div class="h-full flex flex-col items-center justify-center">
   <div class="text-5xl font-bold mb-6">
