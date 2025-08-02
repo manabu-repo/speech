@@ -1,28 +1,38 @@
 import { Post } from "@/interfaces/post";
 import fs from "fs";
 import matter from "gray-matter";
-import { join } from "path";
+import { join, extname, basename } from "path";
 
 const postsDirectory = join(process.cwd(), "_posts");
 
 export function getPostSlugs() {
-  return fs.readdirSync(postsDirectory);
+  // 只返回 .md 和 .mdx 文件名
+  return fs.readdirSync(postsDirectory).filter(
+    (file) => extname(file) === ".md" || extname(file) === ".mdx"
+  );
 }
 
 export function getPostBySlug(slug: string) {
-  const realSlug = slug.replace(/\.md$/, "");
-  const fullPath = join(postsDirectory, `${realSlug}.md`);
+  // 支持 .md 和 .mdx
+  let fileName = "";
+  if (fs.existsSync(join(postsDirectory, `${slug}.mdx`))) {
+    fileName = `${slug}.mdx`;
+  } else if (fs.existsSync(join(postsDirectory, `${slug}.md`))) {
+    fileName = `${slug}.md`;
+  } else {
+    throw new Error(`Post not found: ${slug}`);
+  }
+  const fullPath = join(postsDirectory, fileName);
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
-  return { ...data, slug: realSlug, content } as Post;
+  return { ...data, slug, content } as Post;
 }
 
 export function getAllPosts(): Post[] {
-  const slugs = getPostSlugs();
+  const slugs = getPostSlugs().map((file) => basename(file, extname(file)));
   const posts = slugs
     .map((slug) => getPostBySlug(slug))
-    // sort posts by date in descending order
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
   return posts;
 }
