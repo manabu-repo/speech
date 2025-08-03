@@ -8,6 +8,8 @@ import Container from "@/app/_components/container";
 import Header from "@/app/_components/header";
 import { PostBody } from "@/app/_components/post-body";
 import { PostHeader } from "@/app/_components/post-header";
+import { MDXRemote } from "next-mdx-remote/rsc"; // 推荐用 RSC 方案
+import PdfEmbed from "@/app/_components/pdf-embed";
 
 export default async function Post(props: Params) {
   const params = await props.params;
@@ -18,8 +20,9 @@ export default async function Post(props: Params) {
   }
 
   const content = await markdownToHtml(post.content || "");
+  const isMDX = post.slug.endsWith(".mdx");
 
-  return (
+   return (
     <main>
       <Alert preview={post.preview} />
       <Container>
@@ -31,7 +34,14 @@ export default async function Post(props: Params) {
             date={post.date}
             author={post.author}
           />
-          <PostBody content={content} />
+          {isMDX ? (
+            <MDXRemote
+              source={post.content}
+              components={{ PdfEmbed }}
+            />
+          ) : (
+            <PostBody content={post.content} />
+          )}
         </article>
       </Container>
     </main>
