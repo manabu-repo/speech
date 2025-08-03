@@ -11,10 +11,13 @@
     "@slidev/cli": "^51.6.0",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
+    "@slidev/theme-apple-basic": "^0.25.1",
+    "@slidev/theme-bricks": "^0.25.0",
+    "@slidev/theme-shibainu": "^0.25.0",
+    "slidev-theme-zhozhoba": "^1.0.0",
     "vue": "^3.5.13"
   },
   "devDependencies": {
-    "@iconify-json/carbon": "^1.2.11",
-    "slidev-theme-zhozhoba": "^1.0.0"
+    "@iconify-json/carbon": "^1.2.11"
   }
 }
