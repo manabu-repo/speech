@@ -151,7 +151,7 @@ layout: two-cols
 </div>
 
 ---
-layout: default
+layout: two-cols
 ---
 
 <SeeyonIcon />
@@ -159,53 +159,46 @@ layout: default
 
 # <SeeyonText>试用期工作内容</SeeyonText>
 
-入职以来工作内容涉及到三个模块：任务项开发、BUG修复以及客户BUG解决。
+- 🧩 biz-org(选人组件)
+  - 选人组件静态调用
+  - 选人组件新主题适配
+  - 批量选择功能适配
+- 🚀 ctp-user/ctp-user-mobile
+  - 集团化分级管控(流程授权部分)
+  - 历史遗留BUG解决
+- 🖥️ organization/organization-mobile
+  - 历史遗留BUG解决
 
-**核心项目**
-- 🧩 V8-Cube组件库重构(v1.2 → v2.0)
-- 🚀 X-Console控制台性能优化
-- 🧱 V8-SDK工具链开发与维护
-- 🖥️ 中台微前端架构整合
+::right::
 
 **日常工作**
-- 业务需求开发与Code Review
-- CI/CD流水线维护
-- 前端工程化建设
-- 新人技术指导
-
-
----
-
-<SeeyonIcon />
-
-# <SeeyonText>试用期工作内容</SeeyonText>
+- 任务项开发
+- BUG修复
+- 客户BUG解决
 
 <div class="mt-4 p-5 rounded-xl">
 
 **量化产出统计**
 
-<v-clicks>
+<!-- <v-clicks> -->
 
 | 维度          | 数量 | 成果 |
 |---------------|------|------|
-| 组件开发      | 24个 | 复用率达85% |
-| 性能优化      | 8项 | 加载时间↓46% |
-| 提交次数      | 132  | 代码质量↑30% |
-| Bug解决率     | 97%  | 关键问题解决率100% |
-| 文档编写      | 18篇 | 团队知识沉淀 |
+| 解决客户BUG        | 10+ |  确保客户问题有效解决   |
+| JIRA BUG处理      | 130+ | 分担了遗留问题压力     |
 
-</v-clicks>
+<!-- </v-clicks> -->
 </div>
 
 ---
 class: "pt-16"
 ---
 
-<SeeyonIcon />
+<!-- <SeeyonIcon /> -->
 
-# 技术亮点与突出价值
+<!-- # 技术亮点与突出价值 -->
 
-<div class="grid grid-cols-2 gap-6 mt-12">
+<!-- <div class="grid grid-cols-2 gap-6 mt-12">
   <div v-click class="p-5 bg-gradient-to-br from-blue-900 to-gray-900 rounded-xl">
     <div class="text-xl text-blue-300 mb-3 flex items-center">
       <carbon:chart-3d class="mr-2" /> 性能突破
@@ -249,37 +242,46 @@ class: "pt-16"
       <li>新人Onboarding文档编写</li>
     </ul>
   </div>
-</div>
-
----
-
-<!-- <SeeyonIcon /> -->
-
-<!-- # 试用期工作亮点/突出价值产出 ** -->
+</div> -->
 
 <!-- --- -->
+
+<SeeyonIcon />
+
+# <SeeyonText>试用期工作亮点/突出价值产出</SeeyonText>
+
+- 选人组件适应（背景：公文业务组微流程改手写阻塞问题支持选人组件静态调用实现）
+- 积极和同事沟通解决若干遗留bug以及性能问题
+- 选人组件
+  - 对于新主题接口统一的设计，在顶层ThemeView保证配置的唯一性，避免值传递过程中因设计兼容或历史原因导致的不一致
+  - 
+- 客户bug解决
+- 工作态度上积极思考解决策略，配合工作推进
+
+---
 
 <SeeyonIcon />
 
 # 试用期对公司企业文化的学习和收获
 
 <div class="mt-5 text-left">
+
   **价值观贯彻**
   <ul class="ml-5 mt-3 space-y-2">
-    <li>客户第一: 推动建立前端体验量化体系</li>
-    <li>技术前瞻: Vue3组合式API全团队推广</li>
-    <li>技术担当: 主导前端基础设施升级</li>
+    <li>客户为本，变革创新</li>
+    <!-- <li>技术前瞻: Vue3组合式API全团队推广</li> -->
+    <!-- <li>技术担当: 主导前端基础设施升级</li> -->
   </ul>
 </div>
 
-<div class="mt-5">
+<!-- <div class="mt-5">
   **协作突破**
   <ul class="ml-5 mt-3 space-y-2">
     <li>建立前后端联调Mock平台</li>
     <li>设计团队组件开发规范RFC文档</li>
     <li>主导3个项目技术方案评审</li>
   </ul>
-</div>
+</div> -->
 
 <div class="mt-5 p-3 bg-gray-800 rounded-lg">
   <div class="text-blue-300">🎯 核心体会:</div>
@@ -297,33 +299,33 @@ layout: two-cols
 ## 专业成长与技术沉淀
 
 <div class="text-left">
-**技术提升**
+
+<!-- **技术提升**
 - 深入掌握Vue3响应式原理
 - Webpack → Vite迁移实践
 - 微前端qiankun架构精通
-- Web Vitals优化专项
+- Web Vitals优化专项 -->
 
 **工程思维**
 - 构建系统优化能力
 - 模块化设计思维
-- 前端安全知识体系
-- DevOps实践能力
+- 项目全局观
 
 </div>
 
-## 个人成长
+<!-- ## 个人成长 -->
 
-## 工作体验
+<!-- ## 工作体验 -->
 
-## 建议
+<!-- ## 建议 -->
 
 ---
 
-<SeeyonIcon />
+<!-- <SeeyonIcon /> -->
 
-# 不足及改进计划
+<!-- # 不足及改进计划 -->
 
-<div class="text-left">
+<!-- <div class="text-left">
 
 **待提升领域与改进方案**
 
@@ -336,49 +338,39 @@ layout: two-cols
 | 架构设计      | 复杂系统设计经验欠缺   | ⭐⭐     |
 | 业务理解      | 产品思维需强化         | ⭐      |
 </div>
-</div>
+</div> -->
 
----
+<!-- --- -->
 
 <SeeyonIcon />
 
 # 不足及改进计划
 
-<div class="text-left">
-
-**提升路径**
-
-<div class="mt-4 pl-2 space-y-4">
-
-1. **专题攻坚计划**  
-   - 浏览器原理/编译原理专研
-   - React专项学习（认证目标）
-   
-2. **复杂系统实践**  
-   - 主导中台大型项目架构设计
-   - 参与跨团队技术方案设计
-   
-3. **业务产品融合**  
-   - 定期参加产品需求评审
-   - 学习业务领域知识
-</div>
-
-<div class="mt-6 p-3 bg-blue-900 rounded">
-  <carbon:sys-provision class="inline-block mr-2"/> Q4目标: 前端架构能力提升Level
-</div>
-</div>
+- 对新主题的使用和影响范围认识不足（在适应的过程中了解到选人组件使用范围很广，功能牵一发动全身，调整时需要确认是否有溢出的情况）
+- 对应任务优先级的判断不足（需在整体上确认具体当天需要完成的任务后，对任务的解决顺序有一个优先级的判断，然后在规划中依次解决）
+- 对于项目内组件位置的定位（对应原先的结构设计了解，对工具的使用定位）
 
 ---
 
 <SeeyonIcon />
 
-# 未来技术规划
+# <SeeyonText>思考</SeeyonText>
 
-<div class="grid grid-cols-3 gap-6 mt-16">
+AI：
+- 通过Agent例如Claude Code对代码提交后cherry-pick 到不同的分支，例如在pre提交后，自动同步到test和dev
+- 类似于Github Action功能在平台能力的实现，自定义钩子自动化构建和单测
+
+---
+
+<!-- <SeeyonIcon /> -->
+
+<!-- # 未来技术规划 -->
+
+<!-- <div class="grid grid-cols-3 gap-6 mt-16">
   <div v-click class="p-5 bg-gray-900 rounded-xl shadow-lg">
-    <div class="i-logos:vue text-4xl mb-3"></div>
-    <div class="text-xl">Vue生态深化</div>
-    <div class="text-sm mt-2">Vue3高级特性实践<br>组件库生态建设</div>
+    <div class="i-logos:react text-4xl mb-3"></div>
+    <div class="text-xl">生态深化</div>
+    <div class="text-sm mt-2">高级特性实践<br>组件库生态建设</div>
   </div>
   
   <div v-click class="p-5 bg-gray-900 rounded-xl shadow-lg">
@@ -396,7 +388,7 @@ layout: two-cols
 
 <div v-click class="mt-16 text-xl bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent inline-block p-2">
   技术愿景: 构建业界领先的V8中台前端技术体系
-</div>
+</div> -->
 
 ---
 class: text-center
