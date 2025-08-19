@@ -316,24 +316,45 @@ layout: two-cols
     <span class="font-bold text-xl">待提升领域</span>
   </div>
   <div class="text-sm space-y-3 text-gray-700">
-    <div class="flex items-start">
-      <carbon:stethoscope class="text-red-400 mt-1 mr-2 flex-shrink-0"/>
-      <span>影响范围预判能力</span>
+    <div>
+      <div class="flex items-start">
+        <carbon:stethoscope class="text-red-400 mt-1 mr-2 flex-shrink-0"/>
+        <span>影响范围预判能力</span>
+      </div>
+      <div class="ml-8 mt-3 flex">
+        <carbon:quotes class="text-gray-500 mr-1 text-2"/>
+        <span>业务组件库使用范围广，调整时需要确认是否有溢出的情况</span>
+        <carbon:quotes class="text-gray-500 ml-1 rotate-180 text-2"/>
+      </div>
     </div>
-    <div class="flex items-start">
-      <carbon:task-view class="text-amber-500 mt-1 mr-2 flex-shrink-0"/>
-      <span>多任务优先级管理</span>
+    <div>
+      <div class="flex items-start">
+        <carbon:task-view class="text-amber-500 mt-1 mr-2 flex-shrink-0"/>
+        <span>多任务优先级管理</span>
+      </div>
+      <div class="ml-8 mt-3 flex">
+        <carbon:quotes class="text-gray-500 mr-1  text-2"/>
+        <span>整体把握当天任务，梳理优先级依次解决</span>
+        <carbon:quotes class="text-gray-500 ml-1 rotate-180 text-2"/>
+      </div>
     </div>
-    <div class="flex items-start">
-      <carbon:location-filled class="text-blue-500 mt-1 mr-2 flex-shrink-0"/>
-      <span>组件定位效率</span>
+    <div>
+      <div class="flex items-start">
+        <carbon:location-filled class="text-blue-500 mt-1 mr-2 flex-shrink-0"/>
+        <span>组件定位效率</span>
+      </div>
+      <div class="ml-8 mt-3 flex">
+        <carbon:quotes class="text-gray-500 mr-1 text-2"/>
+        <span>深入了解项目整体结构，运用工具快速定位</span>
+        <carbon:quotes class="text-gray-500 ml-1 rotate-180 text-2"/>
+      </div>
     </div>
   </div>
 </div>
 
 ::right::
 
-<div class="ml-10">
+<div class="ml-10 mt-20">
   <div class="mt-8">
     <div class="flex items-center mb-4">
       <carbon:progress-bar-round class="text-green-600 mr-2 text-xl"/>
@@ -368,35 +389,38 @@ class: text-center
         <div class="font-bold text-blue-600 text-lg">短期目标</div>
         <ul class="text-sm mt-3 text-gray-700 space-y-2">
           <li>React生态深度实践</li>
-          <li>组件库架构升级</li>
+          <li>组件库深入完善</li>
+          <li>代码可维护性探索</li>
         </ul>
       </div>
       <div class="w-1/3 p-4 border-b-4 border-green-500">
         <div class="font-bold text-green-600 text-lg">中期规划</div>
         <ul class="text-sm mt-3 text-gray-700 space-y-2">
-          <li>微前端架构优化</li>
+          <li>性能优化体系建立</li>
           <li>工程化工具链完善</li>
+          <li>AI辅助流程落地</li>
         </ul>
       </div>
       <div class="w-1/3 p-4 border-b-4 border-purple-500">
         <div class="font-bold text-purple-600 text-lg">长期愿景</div>
         <ul class="text-sm mt-3 text-gray-700 space-y-2">
-          <li>前端架构师成长</li>
+          <li>前端架构师成长路径</li>
           <li>开源项目贡献</li>
+          <li>技术影响力建设</li>
         </ul>
       </div>
     </div>
   </div>
 </div>
 
-<div class="mt-16 p-6 bg-gradient-to-r from-teal-500 to-blue-600 rounded-xl w-3/4 mx-auto">
+<!-- <div class="mt-16 p-6 bg-gradient-to-r from-teal-500 to-blue-600 rounded-xl w-3/4 mx-auto">
   <div class="text-center text-xl font-bold text-white">
     技术愿景：构建业界领先的V8中台前端技术体系
   </div>
   <div class="text-center mt-3 text-teal-100">
     "因协同·而致远"
   </div>
-</div>
+</div> -->
 
 ---
 class: text-center
